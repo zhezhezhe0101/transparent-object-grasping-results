@@ -1,0 +1,50 @@
+{
+  "dataset": "syntodd",
+  "split": "test",
+  "ckpt": "ablation_baseline.p",
+  "n_samples": 5375,
+  "max_samples_limit": null,
+  "timestamp": "2026-10-13T15:24:06",
+  "depth_full_meters": {
+    "RMSE": 0.1402,
+    "MAE": 0.0987,
+    "REL": 0.1345,
+    "delta105": 46.7878,
+    "delta110": 59.8165,
+    "delta125": 82.5463
+  },
+  "depth_full_normalized_0_1": {
+    "RMSE": 0.0467,
+    "MAE": 0.0329
+  },
+  "depth_masked_meters": {
+    "RMSE": 0.2302,
+    "MAE": 0.1741,
+    "REL": 0.2504,
+    "delta105": 21.0774,
+    "delta110": 37.2042,
+    "delta125": 67.7937
+  },
+  "depth_masked_normalized_0_1": {
+    "RMSE": 0.0767,
+    "MAE": 0.058
+  },
+  "segmentation": {
+    "mAP": 0.9637,
+    "IoU": 0.9149,
+    "num_classes": 3
+  },
+  "paper_reference_table": {
+    "syntodd": {
+      "RMSE_masked_meters": 0.07,
+      "mAP": 97.83,
+      "IoU": 92.84
+    },
+    "clearpose": {
+      "RMSE_masked_meters": 0.123,
+      "mAP": 98.21,
+      "IoU": 86.27
+    }
+  },
+  "ablated": "（无，作为对比基准）"
+}

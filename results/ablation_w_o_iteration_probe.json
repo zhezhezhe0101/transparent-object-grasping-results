@@ -1,0 +1,51 @@
+{
+  "dataset": "syntodd",
+  "split": "test",
+  "variant": "w/o_iteration_probe",
+  "ckpt": "best_syntodd.p",
+  "n_samples": 5375,
+  "max_samples_limit": null,
+  "timestamp": "2026-10-13T15:43:25",
+  "depth_full_meters": {
+    "RMSE": 0.1425,
+    "MAE": 0.1002,
+    "REL": 0.1366,
+    "delta105": 45.5021,
+    "delta110": 59.1667,
+    "delta125": 82.4301
+  },
+  "depth_full_normalized_0_1": {
+    "RMSE": 0.0475,
+    "MAE": 0.0334
+  },
+  "depth_masked_meters": {
+    "RMSE": 0.2353,
+    "MAE": 0.1777,
+    "REL": 0.259,
+    "delta105": 20.2606,
+    "delta110": 36.3721,
+    "delta125": 67.2899
+  },
+  "depth_masked_normalized_0_1": {
+    "RMSE": 0.0784,
+    "MAE": 0.0592
+  },
+  "segmentation": {
+    "mAP": 0.9637,
+    "IoU": 0.9137,
+    "num_classes": 3
+  },
+  "paper_reference_table": {
+    "syntodd": {
+      "RMSE_masked_meters": 0.07,
+      "mAP": 97.83,
+      "IoU": 92.84
+    },
+    "clearpose": {
+      "RMSE_masked_meters": 0.123,
+      "mAP": 98.21,
+      "IoU": 86.27
+    }
+  },
+  "ablated": "迭代精炼（推理时探针：iterations 1 vs 3，使用官方权重，非重训）"
+}

@@ -1,0 +1,49 @@
+{
+  "dataset": "syntodd",
+  "split": "test",
+  "ckpt": "best_syntodd.p",
+  "n_samples": 1000,
+  "max_samples_limit": 1000,
+  "timestamp": "2026-10-12T08:51:26",
+  "depth_full_meters": {
+    "RMSE": 0.1357,
+    "MAE": 0.0945,
+    "REL": 0.12,
+    "delta105": 48.7019,
+    "delta110": 60.9654,
+    "delta125": 84.0578
+  },
+  "depth_full_normalized_0_1": {
+    "RMSE": 0.0452,
+    "MAE": 0.0315
+  },
+  "depth_masked_meters": {
+    "RMSE": 0.2157,
+    "MAE": 0.1624,
+    "REL": 0.2247,
+    "delta105": 19.5259,
+    "delta110": 37.0102,
+    "delta125": 70.2762
+  },
+  "depth_masked_normalized_0_1": {
+    "RMSE": 0.0719,
+    "MAE": 0.0541
+  },
+  "segmentation": {
+    "mAP": 0.973,
+    "IoU": 0.9242,
+    "num_classes": 3
+  },
+  "paper_reference_table": {
+    "syntodd": {
+      "RMSE_masked_meters": 0.07,
+      "mAP": 97.83,
+      "IoU": 92.84
+    },
+    "clearpose": {
+      "RMSE_masked_meters": 0.123,
+      "mAP": 98.21,
+      "IoU": 86.27
+    }
+  }
+}
